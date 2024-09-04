@@ -58,5 +58,19 @@ const displayNamesOfStudent = (employee) =>{
     }
 }
 
+// function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
 
-export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent};
+const nameAndCity = (arrayOfObjects) =>{
+    if(arrayOfObjects ){
+        if(arrayOfObjects.length<4){
+            console.log("Element not found");
+        }else{
+            console.log(arrayOfObjects[3].name ,  arrayOfObjects[3].city)
+        }
+    }else {
+        console.log("No data")
+    }
+}
+
+
+export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity};
