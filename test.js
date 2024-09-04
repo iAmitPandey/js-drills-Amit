@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby, userInfo} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -51,3 +51,13 @@ firstHobby(arrayOfObjects)
 firstHobby([])
 firstHobby(undefined)
 firstHobby(null)
+
+// function that accesses and prints the names and email addresses of individuals aged 25.
+
+
+for(let i =0; i<arrayOfObjects.length; i++){
+    userInfo(arrayOfObjects[i]);
+    userInfo({})
+    userInfo(null)
+    userInfo(undefined)
+}
