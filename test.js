@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -18,4 +18,13 @@ for(let i = 0; i<arrayOfObjects.length; i++){
     hobbyInAge(undefined, 0);
     hobbyInAge(null, null);
     hobbyInAge({}, 0);
+}
+
+// function that extracts and displays the names of individuals who are students (`isStudent: true`) and live in Australia.
+
+for(let i = 0; i<arrayOfObjects.length; i++){
+    displayNamesOfStudent(arrayOfObjects[i]);
+    displayNamesOfStudent({})
+    displayNamesOfStudent(null)
+    displayNamesOfStudent(undefined)
 }
