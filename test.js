@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -35,3 +35,11 @@ nameAndCity(arrayOfObjects)
 nameAndCity([]);
 nameAndCity(null)
 nameAndCity(undefined)
+
+
+// Implement a loop to access and print the ages of all individuals in the dataset.
+
+ageOfAll(arrayOfObjects)
+ageOfAll([])
+ageOfAll(null)
+ageOfAll(undefined)
