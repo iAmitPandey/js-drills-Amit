@@ -88,4 +88,16 @@ const ageOfAll = (arrayOfObjects) =>{
     }else console.log("Null Input")
 }
 
-export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll};
+// function to retrieve and display the first hobby of each individual in the dataset.
+
+
+const firstHobby =(arrayOfObjects) =>{
+    if(arrayOfObjects && arrayOfObjects.length>0){
+        for(let i = 0; i<arrayOfObjects.length; i++){
+            let hobbies = arrayOfObjects[i].hobbies;
+            console.log(hobbies[0]);
+        }
+    }else console.log("Error");
+}
+
+export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby};
