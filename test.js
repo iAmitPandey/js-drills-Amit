@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -43,3 +43,11 @@ ageOfAll(arrayOfObjects)
 ageOfAll([])
 ageOfAll(null)
 ageOfAll(undefined)
+
+
+// function to retrieve and display the first hobby of each individual in the dataset.
+
+firstHobby(arrayOfObjects)
+firstHobby([])
+firstHobby(undefined)
+firstHobby(null)
