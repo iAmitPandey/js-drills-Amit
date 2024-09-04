@@ -28,5 +28,25 @@ const  emailAddressOfAll = (employee) =>{
 }
 
 
+// function that retrieves and prints the hobbies of individuals with a specific age, say 30 years old.
 
-export { emailAddressOfAll};
+
+const hobbyInAge = (employee, age) =>{
+    if(age && employee.hasOwnProperty("age")){
+
+        let hobbies = [];
+        if(employee.hobbies && employee.hobbies.length>0){
+            for(let i = 0; i<employee.hobbies.length; i++){
+                hobbies.push(employee.hobbies[i]);
+            }
+            console.log(hobbies , "\n")
+        }
+        
+    }
+    else{
+        return;
+    }
+}
+
+
+export { emailAddressOfAll, hobbyInAge};
