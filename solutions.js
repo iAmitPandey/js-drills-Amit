@@ -10,14 +10,14 @@ const emailAddressOfAll = (employee) => {
       return;
     }
     if (regex.test(employee.email)) {
-      console.log(employee.email);
-      return;
+      // console.log(employee.email);
+      return employee.email;
     } else {
       console.log("Invalid email");
       return;
     }
   } else {
-    console.log("Employee has not an email id");
+    console.log("No email id");
     return;
   }
 };
