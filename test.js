@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -28,3 +28,10 @@ for(let i = 0; i<arrayOfObjects.length; i++){
     displayNamesOfStudent(null)
     displayNamesOfStudent(undefined)
 }
+
+// function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
+
+nameAndCity(arrayOfObjects)
+nameAndCity([]);
+nameAndCity(null)
+nameAndCity(undefined)
