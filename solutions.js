@@ -72,5 +72,20 @@ const nameAndCity = (arrayOfObjects) =>{
     }
 }
 
+// Implement a loop to access and print the ages of all individuals in the dataset.
 
-export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity};
+
+const ageOfAll = (arrayOfObjects) =>{
+    if(arrayOfObjects){
+        if(arrayOfObjects.length==0) console.log("Empty");
+        else{
+            for(let i = 0; i<arrayOfObjects.length; i++){
+                let name = arrayOfObjects[i].name;
+                let age = arrayOfObjects[i].age;
+                console.log(`Age of ${name} is ${age}`)
+            }
+        }
+    }else console.log("Null Input")
+}
+
+export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll};
