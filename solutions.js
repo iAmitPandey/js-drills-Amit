@@ -48,5 +48,15 @@ const hobbyInAge = (employee, age) =>{
     }
 }
 
+// function that extracts and displays the names of individuals who are students (`isStudent: true`) and live in Australia.
 
-export { emailAddressOfAll, hobbyInAge};
+const displayNamesOfStudent = (employee) =>{
+    if(employee && employee.hasOwnProperty("isStudent")){
+        (employee.country && employee.country == "Australia") ? console.log(employee.name) : "";
+    }else{
+        console.log("Not a student");
+    }
+}
+
+
+export { emailAddressOfAll, hobbyInAge, displayNamesOfStudent};
