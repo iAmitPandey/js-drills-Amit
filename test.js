@@ -1,5 +1,5 @@
 import arrayOfObjects from './persons.js';
-import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby, userInfo} from './solutions.js'
+import {emailAddressOfAll, hobbyInAge, displayNamesOfStudent, nameAndCity, ageOfAll, firstHobby, userInfo, cityAndCountry} from './solutions.js'
 
 
 //    function that accesses and returns the email addresses of all individuals.
@@ -60,4 +60,13 @@ for(let i =0; i<arrayOfObjects.length; i++){
     userInfo({})
     userInfo(null)
     userInfo(undefined)
+}
+
+// Implement a loop to access and log the city and country of each individual in the dataset.
+
+for(let i =0; i<arrayOfObjects.length; i++){
+    cityAndCountry(arrayOfObjects[i]);
+    cityAndCountry({})
+    cityAndCountry(null)
+    cityAndCountry(undefined)
 }
