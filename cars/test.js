@@ -1,5 +1,5 @@
 import { inventory } from "./cars.js";
-import { carsInfo } from "./solutions.js";
+import { carsInfo, lastCarInfo } from "./solutions.js";
 
 
 
@@ -11,3 +11,10 @@ carsInfo(null)
 carsInfo(undefined)
 carsInfo([0]);
 carsInfo({})
+
+
+lastCarInfo(inventory)
+lastCarInfo([])
+lastCarInfo({})
+lastCarInfo(undefined)
+lastCarInfo(null)
