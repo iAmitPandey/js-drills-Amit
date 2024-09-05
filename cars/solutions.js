@@ -1,6 +1,5 @@
 "use strict";
 
-
 const isValidArg = (inventory) => {
   if (inventory !== null && inventory !== undefined) {
     if (
@@ -89,12 +88,29 @@ const olderCar = (inventory) => {
   if (isValidArg(inventory)) {
     let yearData = carYear(inventory);
     let olderCarsData = [];
-    for(let car of yearData){
-      if(car < 2000) olderCarsData.push(car)
+    for (let car of yearData) {
+      if (car < 2000) olderCarsData.push(car);
     }
     console.log(olderCarsData.length);
     return olderCarsData;
   }
 };
 
-export { carsInfo, lastCarInfo, carModels, carYear, olderCar };
+// ==== Problem #6 ====
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+
+const BMWAndAudi = (inventory) => {
+  if (isValidArg(inventory)) {
+    let carModel = [];
+    for (let obj of inventory) {
+      if (obj.car_make == "Audi" || obj.car_make == "BMW") {
+        carModel.push(obj.car_model);
+      }
+    }
+    console.log(JSON.stringify(carModel))
+    // console.log(carModel)
+    return carModel;
+  }
+};
+
+export { carsInfo, lastCarInfo, carModels, carYear, olderCar, BMWAndAudi };
