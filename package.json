@@ -1,0 +1,20 @@
+{
+  "name": "js-drills-amit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAmitPandey/js-drills-Amit.git"
+  },
+  "author": "Amit",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/iAmitPandey/js-drills-Amit/issues"
+  },
+  "homepage": "https://github.com/iAmitPandey/js-drills-Amit#readme"
+}
