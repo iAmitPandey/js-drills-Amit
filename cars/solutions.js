@@ -1,5 +1,6 @@
 "use strict";
 
+
 const isValidArg = (inventory) => {
   if (inventory !== null && inventory !== undefined) {
     if (
@@ -27,9 +28,9 @@ const carsInfo = (inventory) => {
   if (isValidArg(inventory)) {
     for (let i = 0; i < inventory.length; i++) {
       if (inventory[i].id == 33) {
-        info.push(inventory[i].car_year)
-        info.push(inventory[i].car_make)
-        info.push(inventory[i].car_model)
+        info.push(inventory[i].car_year);
+        info.push(inventory[i].car_make);
+        info.push(inventory[i].car_model);
 
         return inventory[i];
       } else continue;
@@ -57,12 +58,12 @@ const lastCarInfo = (inventory) => {
 const carModels = (inventory) => {
   if (isValidArg(inventory)) {
     let modelData = [];
-    for(let obj of inventory){
-      modelData.push(obj.car_model)
+    for (let obj of inventory) {
+      modelData.push(obj.car_model);
     }
     modelData.sort();
-    console.log(modelData)
-    return modelData
+    console.log(modelData);
+    return modelData;
   }
 };
 
@@ -72,13 +73,28 @@ const carModels = (inventory) => {
 const carYear = (inventory) => {
   if (isValidArg(inventory)) {
     let modelData = [];
-    for(let obj of inventory){
-      modelData.push(obj.car_year)
+    for (let obj of inventory) {
+      modelData.push(obj.car_year);
     }
     modelData.sort();
-    console.log(modelData)
-    return modelData
+    console.log(modelData);
+    return modelData;
   }
 };
 
-export { carsInfo, lastCarInfo, carModels, carYear };
+// ==== Problem #5 ====
+// The car lot manager needs to find out how many cars are older than the year 2000. Using the array you just obtained from the previous problem, find out how many cars were made before the year 2000 and return the array of older cars and log its length.
+
+const olderCar = (inventory) => {
+  if (isValidArg(inventory)) {
+    let yearData = carYear(inventory);
+    let olderCarsData = [];
+    for(let car of yearData){
+      if(car < 2000) olderCarsData.push(car)
+    }
+    console.log(olderCarsData.length);
+    return olderCarsData;
+  }
+};
+
+export { carsInfo, lastCarInfo, carModels, carYear, olderCar };

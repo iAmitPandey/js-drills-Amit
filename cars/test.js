@@ -1,5 +1,5 @@
 import { inventory } from "./cars.js";
-import { carsInfo, lastCarInfo, carModels, carYear } from "./solutions.js";
+import { carsInfo, lastCarInfo, carModels, carYear, olderCar } from "./solutions.js";
 
 
 
@@ -39,3 +39,14 @@ carYear(0)
 carYear(null)
 carYear(undefined)
 carYear({})
+
+
+
+// ==== Problem #5 ====
+
+olderCar(inventory)
+olderCar([])
+olderCar({})
+olderCar(null)
+olderCar(undefined)
+olderCar(0)
